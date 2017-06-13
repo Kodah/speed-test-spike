@@ -2,7 +2,7 @@
 
 import Foundation
 import UIKit
-import EnamelKit
+import Enamel
 
 
 class ViewController: UIViewController, URLSessionDelegate, URLSessionDataDelegate, SimplePingDelegate {
@@ -110,7 +110,7 @@ class ViewController: UIViewController, URLSessionDelegate, URLSessionDataDelega
 //        let toPrint = speeds.reduce(0.0, +) / speeds.count.cg
         
         async(on: .main) {
-            self.label.textColor = CGColor.cadetBlue.ui
+            self.label.textColor = UIColor.orange
             self.label.text = "\(speed.toString())ps"
         }
     }

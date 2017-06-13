@@ -13,35 +13,9 @@
 		BDA48B301EEEB88E00997FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA48B2F1EEEB88E00997FDE /* Assets.xcassets */; };
 		BDA48B331EEEB88E00997FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA48B311EEEB88E00997FDE /* LaunchScreen.storyboard */; };
 		BDA48B521EEFE78400997FDE /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA48B511EEFE78400997FDE /* SimplePing.m */; };
-		BDEAAABE1EF023C2000AC455 /* EnamelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA48B441EEEE17500997FDE /* EnamelKit.framework */; };
-		BDEAAABF1EF023C2000AC455 /* EnamelKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA48B441EEEE17500997FDE /* EnamelKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BDEAAAC31EF023E3000AC455 /* Enamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAAAC21EF023E3000AC455 /* Enamel.framework */; };
-		BDEAAAC41EF023E3000AC455 /* Enamel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAAAC21EF023E3000AC455 /* Enamel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDF8315A1EF0287E00EFF0F4 /* Enamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF831591EF0287E00EFF0F4 /* Enamel.framework */; };
+		BDF8315B1EF0287E00EFF0F4 /* Enamel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDF831591EF0287E00EFF0F4 /* Enamel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BDA48B431EEEE17500997FDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 714F86861D7086A0004D7FA9;
-			remoteInfo = EnamelKit;
-		};
-		BDA48B451EEEE17500997FDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 714F86901D7086A0004D7FA9;
-			remoteInfo = EnamelKitTests;
-		};
-		BDEAAAC01EF023C2000AC455 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 714F86851D7086A0004D7FA9;
-			remoteInfo = EnamelKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BDA48B4E1EEEF1A100997FDE /* Embed Frameworks */ = {
@@ -50,8 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BDEAAAC41EF023E3000AC455 /* Enamel.framework in Embed Frameworks */,
-				BDEAAABF1EF023C2000AC455 /* EnamelKit.framework in Embed Frameworks */,
+				BDF8315B1EF0287E00EFF0F4 /* Enamel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,11 +39,10 @@
 		BDA48B2F1EEEB88E00997FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDA48B321EEEB88E00997FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDA48B341EEEB88E00997FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EnamelKit.xcodeproj; path = ../../../Enamel/EnamelKit/EnamelKit.xcodeproj; sourceTree = "<group>"; };
 		BDA48B4F1EEFE78300997FDE /* speedtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "speedtest-Bridging-Header.h"; sourceTree = "<group>"; };
 		BDA48B501EEFE78400997FDE /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		BDA48B511EEFE78400997FDE /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		BDEAAAC21EF023E3000AC455 /* Enamel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Enamel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF831591EF0287E00EFF0F4 /* Enamel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Enamel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEAAAC31EF023E3000AC455 /* Enamel.framework in Frameworks */,
-				BDEAAABE1EF023C2000AC455 /* EnamelKit.framework in Frameworks */,
+				BDF8315A1EF0287E00EFF0F4 /* Enamel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +60,7 @@
 		BDA48B1C1EEEB88E00997FDE = {
 			isa = PBXGroup;
 			children = (
-				BDEAAAC21EF023E3000AC455 /* Enamel.framework */,
-				BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */,
+				BDF831591EF0287E00EFF0F4 /* Enamel.framework */,
 				BDA48B271EEEB88E00997FDE /* speedtest */,
 				BDA48B261EEEB88E00997FDE /* Products */,
 			);
@@ -120,15 +90,6 @@
 			path = speedtest;
 			sourceTree = "<group>";
 		};
-		BDA48B3D1EEEE17400997FDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDA48B441EEEE17500997FDE /* EnamelKit.framework */,
-				BDA48B461EEEE17500997FDE /* EnamelKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,7 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BDEAAAC11EF023C2000AC455 /* PBXTargetDependency */,
 			);
 			name = speedtest;
 			productName = speedtest;
@@ -180,35 +140,12 @@
 			mainGroup = BDA48B1C1EEEB88E00997FDE;
 			productRefGroup = BDA48B261EEEB88E00997FDE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BDA48B3D1EEEE17400997FDE /* Products */;
-					ProjectRef = BDA48B3C1EEEE17400997FDE /* EnamelKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BDA48B241EEEB88E00997FDE /* speedtest */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BDA48B441EEEE17500997FDE /* EnamelKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = EnamelKit.framework;
-			remoteRef = BDA48B431EEEE17500997FDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDA48B461EEEE17500997FDE /* EnamelKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EnamelKitTests.xctest;
-			remoteRef = BDA48B451EEEE17500997FDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDA48B231EEEB88E00997FDE /* Resources */ = {
@@ -235,14 +172,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BDEAAAC11EF023C2000AC455 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EnamelKit;
-			targetProxy = BDEAAAC01EF023C2000AC455 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BDA48B2C1EEEB88E00997FDE /* Main.storyboard */ = {
