@@ -7,15 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD33DC451EF02AC800FE61F7 /* Enamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD33DC3E1EF02AAD00FE61F7 /* Enamel.framework */; };
+		BD33DC461EF02AC800FE61F7 /* Enamel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD33DC3E1EF02AAD00FE61F7 /* Enamel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BDA48B291EEEB88E00997FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA48B281EEEB88E00997FDE /* AppDelegate.swift */; };
 		BDA48B2B1EEEB88E00997FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA48B2A1EEEB88E00997FDE /* ViewController.swift */; };
 		BDA48B2E1EEEB88E00997FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA48B2C1EEEB88E00997FDE /* Main.storyboard */; };
 		BDA48B301EEEB88E00997FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA48B2F1EEEB88E00997FDE /* Assets.xcassets */; };
 		BDA48B331EEEB88E00997FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA48B311EEEB88E00997FDE /* LaunchScreen.storyboard */; };
 		BDA48B521EEFE78400997FDE /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA48B511EEFE78400997FDE /* SimplePing.m */; };
-		BDF8315A1EF0287E00EFF0F4 /* Enamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF831591EF0287E00EFF0F4 /* Enamel.framework */; };
-		BDF8315B1EF0287E00EFF0F4 /* Enamel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDF831591EF0287E00EFF0F4 /* Enamel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD33DC3D1EF02AAD00FE61F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 717649AF1E43596300430D7C;
+			remoteInfo = "Enamel-iOS";
+		};
+		BD33DC3F1EF02AAD00FE61F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E88B6C1E38B485003CE3E1;
+			remoteInfo = "Enamel-macOS";
+		};
+		BD33DC411EF02AAD00FE61F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 717649B71E43596300430D7C;
+			remoteInfo = "Enamel-iOSTests";
+		};
+		BD33DC431EF02AAD00FE61F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E88B741E38B485003CE3E1;
+			remoteInfo = "Enamel-macOSTests";
+		};
+		BD33DC471EF02AC800FE61F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 717649AE1E43596300430D7C;
+			remoteInfo = "Enamel-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BDA48B4E1EEEF1A100997FDE /* Embed Frameworks */ = {
@@ -24,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BDF8315B1EF0287E00EFF0F4 /* Enamel.framework in Embed Frameworks */,
+				BD33DC461EF02AC800FE61F7 /* Enamel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Enamel.xcodeproj; path = ../../Enamel/Enamel/Enamel.xcodeproj; sourceTree = "<group>"; };
 		BDA48B251EEEB88E00997FDE /* speedtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA48B281EEEB88E00997FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDA48B2A1EEEB88E00997FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +81,6 @@
 		BDA48B4F1EEFE78300997FDE /* speedtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "speedtest-Bridging-Header.h"; sourceTree = "<group>"; };
 		BDA48B501EEFE78400997FDE /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		BDA48B511EEFE78400997FDE /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		BDF831591EF0287E00EFF0F4 /* Enamel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Enamel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,19 +88,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDF8315A1EF0287E00EFF0F4 /* Enamel.framework in Frameworks */,
+				BD33DC451EF02AC800FE61F7 /* Enamel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD33DC331EF02AAD00FE61F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD33DC351EF02AAD00FE61F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD33DC3E1EF02AAD00FE61F7 /* Enamel.framework */,
+				BD33DC401EF02AAD00FE61F7 /* Enamel.framework */,
+				BD33DC421EF02AAD00FE61F7 /* Enamel-iOSTests.xctest */,
+				BD33DC441EF02AAD00FE61F7 /* Enamel-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BDA48B1C1EEEB88E00997FDE = {
 			isa = PBXGroup;
 			children = (
-				BDF831591EF0287E00EFF0F4 /* Enamel.framework */,
 				BDA48B271EEEB88E00997FDE /* speedtest */,
 				BDA48B261EEEB88E00997FDE /* Products */,
+				BD33DC331EF02AAD00FE61F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +162,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BD33DC481EF02AC800FE61F7 /* PBXTargetDependency */,
 			);
 			name = speedtest;
 			productName = speedtest;
@@ -140,12 +198,49 @@
 			mainGroup = BDA48B1C1EEEB88E00997FDE;
 			productRefGroup = BDA48B261EEEB88E00997FDE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BD33DC351EF02AAD00FE61F7 /* Products */;
+					ProjectRef = BD33DC341EF02AAD00FE61F7 /* Enamel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BDA48B241EEEB88E00997FDE /* speedtest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BD33DC3E1EF02AAD00FE61F7 /* Enamel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Enamel.framework;
+			remoteRef = BD33DC3D1EF02AAD00FE61F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD33DC401EF02AAD00FE61F7 /* Enamel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Enamel.framework;
+			remoteRef = BD33DC3F1EF02AAD00FE61F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD33DC421EF02AAD00FE61F7 /* Enamel-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Enamel-iOSTests.xctest";
+			remoteRef = BD33DC411EF02AAD00FE61F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD33DC441EF02AAD00FE61F7 /* Enamel-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Enamel-macOSTests.xctest";
+			remoteRef = BD33DC431EF02AAD00FE61F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDA48B231EEEB88E00997FDE /* Resources */ = {
@@ -172,6 +267,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD33DC481EF02AC800FE61F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Enamel-iOS";
+			targetProxy = BD33DC471EF02AC800FE61F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BDA48B2C1EEEB88E00997FDE /* Main.storyboard */ = {
