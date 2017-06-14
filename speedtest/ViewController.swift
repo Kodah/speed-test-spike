@@ -39,10 +39,8 @@ class ViewController: UIViewController, URLSessionDelegate, URLSessionDataDelega
                 
                 let toPrint = self.speeds.sorted(by: >)[0...pointsToAverage].reduce(0.0, +) / pointsToAverage.cg
                 self.label.textColor = UIColor.green
-                self.label.text = "\(toPrint.MiB.toString())ps"
-                print("speed1: \(toPrint.MiB.toString())ps")
+                self.label.text = "\(toPrint.floor(places: 2))Mbps"
             }
-            print("speed2: \(String(describing: megabytesPerSecond))")
             
         }
     }
@@ -103,15 +101,13 @@ class ViewController: UIViewController, URLSessionDelegate, URLSessionDataDelega
         
         let elapsed = stopTime - startTime
         
-        let speed = (bytesReceived.MiB.cg / elapsed.cg).MiB
-        speeds.append(speed.MiB.cg)
+        let speed = (bytesReceived.B.cg / elapsed.cg).B.mb
+        speeds.append(speed)
         
-        
-//        let toPrint = speeds.reduce(0.0, +) / speeds.count.cg
         
         async(on: .main) {
             self.label.textColor = UIColor.orange
-            self.label.text = "\(speed.toString())ps"
+            self.label.text = "\(speed.floor(places: 2))Mbps"
         }
     }
     
@@ -123,8 +119,38 @@ class ViewController: UIViewController, URLSessionDelegate, URLSessionDataDelega
             return
         }
         
-        let speed = bytesReceived.MiB.cg / elapsed.cg
+        let speed = bytesReceived.mb / elapsed.cg
         speedTestCompletionHandler(speed, nil)
     }
     
+}
+
+public extension CGDataSize {
+    public var b: CGFloat {
+        switch self {
+        case .B(let $): return $ * 8
+            
+        case .kB(let $): return $ * 1000 * 8
+        case .MB(let $): return $ * 1000_000 * 8
+        case .GB(let $): return $ * 1000_000_000 * 8
+        case .TB(let $): return $ * 1000_000_000_000.0 * 8
+            
+        case .KiB(let $): return $ * 1024 * 8
+        case .MiB(let $): return $ * 1_048_576 * 8
+        case .GiB(let $): return $ * 1_073_741_824 * 8
+        case .TiB(let $): return $ * 1_099_511_627_776.0 * 8
+        }
+    }
+    
+    public var mb: CGFloat {
+        switch self {
+        case .B(let $): return $ / 125000
+            
+        case .kB(let $): return $ / 0.125
+        case .MB(let $): return $ * 8
+        case .GB(let $): return $ * 8000
+        case .TB(let $): return $ * 8000000
+        default: return -1
+        }
+    }
 }
